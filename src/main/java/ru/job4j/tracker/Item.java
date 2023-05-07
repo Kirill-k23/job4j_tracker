@@ -20,12 +20,6 @@ public class Item {
         this.name = name;
     }
 
-    public void printInfo() {
-        System.out.println("Номер " + id);
-        System.out.println("Имя " + name);
-        System.out.println();
-    }
-
     public LocalDateTime getCreated() {
         return created;
     }
@@ -44,14 +38,5 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public static void main(String[] args) {
-        Item reloadFirst = new Item();
-        reloadFirst.printInfo();
-        Item reloadSecond = new Item("Kirill", 25);
-        reloadSecond.printInfo();
-        Item reloadThird = new Item("Vitaliy");
-        reloadThird.printInfo();
     }
 }
