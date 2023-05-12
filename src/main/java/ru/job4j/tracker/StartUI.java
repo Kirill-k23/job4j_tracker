@@ -8,8 +8,8 @@ public class StartUI {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MMMM-EEEE-yyyy HH:mm:ss");
         System.out.println("Item:" + " "
                 + item.getCreated().format(formatter) + " "
-        + item.getId() + " "
-        + item.getName()
+                + item.getId() + " "
+                + item.getName()
         );
     }
 }
