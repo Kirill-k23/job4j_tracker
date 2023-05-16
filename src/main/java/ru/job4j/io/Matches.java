@@ -15,14 +15,14 @@ public class Matches {
             if (matches >= 1 && matches <= Math.min(3, count)) {
                 count -= matches;
                 turn = !turn;
-                if (!turn) {
-                    System.out.println("Выйграл первый игорок");
-                } else {
-                    System.out.println("Выйграл второй игорок");
-                }
             } else {
                 System.out.println("Неверное колличество спичек");
             }
+        }
+        if (!turn) {
+            System.out.println("Выйграл первый игорок");
+        } else {
+            System.out.println("Выйграл второй игорок");
         }
     }
 }
