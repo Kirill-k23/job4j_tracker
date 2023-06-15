@@ -14,10 +14,10 @@ public class FullSearchTest {
     @Test
     public void extractNumber() {
         FullSearch fullSearch = new FullSearch();
-        List<Task> tasks = Arrays.asList(
-                new Task("1", "First desc"),
-                new Task("2", "Second desc"),
-                new Task("1", "First desc")
+        List<Tasks> tasks = Arrays.asList(
+                new Tasks("1", "First desc"),
+                new Tasks("2", "Second desc"),
+                new Tasks("1", "First desc")
         );
         Set<String> expected = new HashSet<>(Arrays.asList("1", "2"));
         assertThat(fullSearch.extractNumber(tasks)).containsAll(expected);
