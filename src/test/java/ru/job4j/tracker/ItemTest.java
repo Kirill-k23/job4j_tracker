@@ -35,9 +35,9 @@ public class ItemTest {
         );
         Collections.sort(items, new ItemDescByName());
         List<Item> expected = Arrays.asList(
-                new Item("One"),
+                new Item("Two"),
                 new Item("Three"),
-                new Item("Two")
+                new Item("One")
         );
         assertThat(items).isEqualTo(expected);
     }
