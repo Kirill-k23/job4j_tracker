@@ -9,19 +9,21 @@ public class AttachmentSort {
                 new Attachment("image", 34),
                 new Attachment("image", 13)
         );
-        Collections.sort(attachments, new Comparator<Attachment>() {
+        Comparator<Attachment> comparator = new Comparator<>() {
             @Override
             public int compare(Attachment o1, Attachment o2) {
                 return Integer.compare(o1.getSize(), o2.getSize());
             }
-        });
+        };
+        attachments.sort(comparator);
         System.out.println(attachments);
-        Collections.sort(attachments, new Comparator<Attachment>() {
+        Comparator<Attachment> comparatorName = new Comparator<>() {
             @Override
             public int compare(Attachment o1, Attachment o2) {
                 return o1.getName().compareTo(o2.getName());
             }
-        });
+        };
+        attachments.sort(comparatorName);
         System.out.println(attachments);
     }
 }
