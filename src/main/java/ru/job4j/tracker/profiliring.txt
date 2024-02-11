@@ -1,0 +1,9 @@
+Профелирование с помощью  команды jmap -histo <pid>.
+
+При запуске программы heap = 5161096 bytes.
+
+При добавлении 100 заявок = 5727304
+
+При удалении всех заявок = 6471024
+
+При создании 100000 заявок выходит Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
