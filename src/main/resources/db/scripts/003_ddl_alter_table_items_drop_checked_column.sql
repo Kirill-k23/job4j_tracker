@@ -1,1 +1,0 @@
-ALTER table items drop column checked;
